@@ -1,12 +1,14 @@
-# AI-Recipe-Recommendation-System
+# AI Recipe Recommendation System
 
 A Streamlit web app that recommends recipes based on the ingredients you already have. It ranks recipes by an **ingredient-match score**, scales ingredient quantities to your serving size, filters by cooking time, and flags allergens with suggested substitutions. Searches a dataset of **5,000+ recipes** across 8 cuisines.
 
 ## Demo
 
-Enter what's in your kitchen (e.g. `chicken, rice, garlic`), set how many people you're feeding and how much time you have, and the app returns the best-matching recipes ranked by how much of each you can already make.
+Enter what's in your kitchen (e.g. `chicken, pasta`), set how many people you're feeding, your time limit, and any allergies. The app returns the best-matching recipes ranked by how much of each you can already make, with quantities scaled to your serving size.
 
-*(Add a screenshot here once you've run it — see "Adding a demo image" below.)*
+![AI Recipe Recommendation System - input](Assets/demo.png)
+
+![AI Recipe Recommendation System - results](Assets/demo1.png)
 
 ## Features
 
@@ -70,14 +72,6 @@ streamlit run app.py
 
 This opens the app in your browser. Enter your ingredients, set the filters, and browse the ranked recommendations.
 
-## Adding a demo image
-
-A screenshot makes the repo much more engaging:
-
-1. Run the app and take a screenshot of some recommendations.
-2. Save it in an `assets/` folder as `demo.png`.
-3. Replace the *Demo* section above with `![demo](assets/demo.png)`.
-
 ## Tech stack
 
 - **Python**
@@ -90,3 +84,4 @@ A screenshot makes the repo much more engaging:
 - Matching is based on ingredient-name overlap, so it doesn't understand that "scallion" and "green onion" are the same thing. A synonym map or embeddings would improve this.
 - The dataset is generated for demonstration; swapping in a large real-world recipe dataset would make recommendations richer.
 - Possible extensions: dietary filters (vegetarian/vegan), nutrition info, and "what one extra ingredient unlocks the most recipes" suggestions.
+
